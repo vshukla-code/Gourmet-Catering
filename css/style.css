@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* header section start css */
+
+
+.header-box {
+    display: flex;
+    height: 54.5px;
+    width: 100%;
+    padding: 8px 16px;
+    color: #000000;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: fixed;
+}
+
+.left-header {
+    width: 50%;
+    margin: auto;
+    margin-right: 10px;
+    /* position: fixed; */
+}
+
+.left-header a {
+    text-decoration: none;
+    padding: 8px 16px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    letter-spacing: 4px;
+    color: #000000;
+}
+
+.right-header {
+    width: 50%;
+    margin: auto;
+    text-align: right;
+    margin-right: 10px;
+    /* position: fixed; */
+}
+
+.right-header a {
+    text-decoration: none;
+    padding: 8px 16px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    letter-spacing: 4px;
+    color: #000000;
+}
+
+/* header section end css */
+
+
+/* Main home page iamge satrt  */
+
+.home-image-section {
+    width: 100%;
+    overflow: hidden;
+}
+
+.home-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Main home page iamge end  */
+
+
+/* about section start */
+
+.about-cetering {
+    display: flex;
+    padding-top: 70px;
+
+}
+
+.about-img {
+    /* border: 1px solid green; */
+    width: 50%;
+    padding-left: 40px;
+}
+
+.about-write {
+
+    width: 50%;
+    padding-right: 20px;
+    margin-right: 100px;
+    padding-left: 30px;
+}
+
+.about-write h1 {
+    text-align: center;
+    padding: 10px 0px 20px 0px;
+    letter-spacing: 4px;
+}
+
+.about-write h4 {
+    text-align: center;
+    padding: 10px 0px 20px 0px;
+    letter-spacing: 4px;
+}
+
+.about-write p {
+    justify-content: left;
+    padding: 10px 0px 20px 0px;
+    letter-spacing: 2px;
+    line-height: 1.6;
+    padding-top: 20px;
+}
+
+.about-write .para2 {
+    margin-top: 20px;
+    opacity: 0.6;
+}
+
+/* about section End */
+
+
+/* Menu Section Start */
+
+.menu-dash {
+    display: flex;
+    padding-top: 75px;
+}
+
+.menu-write {
+    width: 50%;
+    padding-left: 20px;
+}
+
+.menu-img {
+    width: 50%;
+    padding-right: 20px;
+}
+
+.menu-write h1 {
+
+    text-align: center;
+    letter-spacing: 3px;
+    padding-bottom: 70px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.menu-write h4 {
+    letter-spacing: 4px;
+    padding-left: 80px;
+    /* font-size: 20px; */
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.menu-write p {
+    /* letter-spacing: 4px; */
+    padding-bottom: 40px;
+    padding-left: 80px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Menu Section End */
+
+
+/* contact section start  */
+
+.contact {
+    width: 82%;
+    /* border: 2px solid red; */
+    margin-left: 65px;
+    padding-top: 75px;
+
+}
+
+.contact h1 {
+    letter-spacing: 4px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 40px;
+
+}
+
+.contact h3 {
+    margin-top: 20px;
+    color: #607d8b;
+    margin-bottom: 20px;
+}
+
+.inputbtn {
+    margin-top: 40px;
+}
+
+.inputbtn input {
+    padding: 8px 16px;
+    display: block;
+    width: 100%;
+    padding-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid rgb(107, 102, 102);
+    background-color: #ffffff;
+}
+
+.btn {
+    border: none;
+    padding: 10px;
+    background-color: rgb(192, 186, 186);
+
+}
+
+.btn:hover {
+    background-color: gray;
+}
+
+
+/* contact section End */
+
+/* Footer Section start */
+
+.foot {
+    padding-bottom: 50px;
+    background-color: #f1f1f1;
+}
+
+.foot h4 {
+    text-align: center;
+    padding-top: 40px;
+}
+
+
+/* Footer Section End */
+
+
+/* Responsive breakpoints */
+@media (max-width: 768px) {
+    .header-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left-header,
+    .right-header {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .about-cetering,
+    .menu-dash {
+        flex-direction: column;
+    }
+
+    .about-img,
+    .about-write,
+    .menu-write,
+    .menu-img {
+        width: 100%;
+    }
+
+    .menu-write h4,
+    .menu-write p {
+        padding-left: 20px;
+    }
+
+    .contact {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .about-write h1,
+    .about-write h4,
+    .menu-write h1 {
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+    .menu-write h4,
+    .menu-write p {
+        padding-left: 10px;
+    }
+
+    .contact h1 {
+        font-size: 24px;
+    }
+
+    .inputbtn input {
+        padding: 8px;
+    }
+}
